@@ -55,3 +55,12 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# stuff
+admin_credentials
+
+#locked files
+*~
+
+# virtualenv
+venv
