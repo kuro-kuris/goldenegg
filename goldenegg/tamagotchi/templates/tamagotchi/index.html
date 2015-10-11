@@ -1,0 +1,20 @@
+{% if highest_level_pet_list %}
+    <p>Highest level pets:</p>
+    <ul>
+    {% for pet in highest_level_pet_list %}
+        <li><a href="/tamagotchi/{{ pet.user.id }}/">{{ pet.user.user_name }}</a></li>
+    {% endfor %}
+    </ul>
+
+    {% if richest_pet_list %}
+        <p>Richest pets:</p>
+        <ul>
+        {% for pet in richest_pet_list %}
+            <li><a href="/tamagotchi/{{ pet.user.id }}/">{{ pet.user.user_name }}</a></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No pets are available.</p>
+    {% endif %}
+
+{% endif %}
