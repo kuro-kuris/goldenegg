@@ -11,7 +11,7 @@ class User(models.Model):
         return self.user_name
 
 class Pet(models.Model):
-    user = models.ForeignKey(User)
+    user = models.OneToOneField(User)
     pet_name = models.CharField(max_length=200)
     pet_health = models.IntegerField(default=100)
     virtual_gold = models.IntegerField(default=0)
