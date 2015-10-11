@@ -1,5 +1,3 @@
-{% load staticfiles %}
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,15 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>The Golden Egg | RBS</title>
-
-    <link href="{% static 'tamagotchi/css/bootstrap.min.css' %}" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{% static 'tamagotchi/css/style.css' %}" />
-
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/x-icon" href="{% static 'tamagotchi/img/icon.png' %}" />
+    <link rel="icon" type="image/x-icon" href="img/icon.png" />
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="{% static 'tamagotchi/js/bootstrap.min.js' %}"></script>
+    <script src="js/bootstrap.min.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -30,7 +26,7 @@
         <div class="row flex">
           <div class="col-md-12">
             <div class="logo text-center img-responsive">
-              <img src="{% static 'tamagotchi/img/logo.png' %}" alt="logo" name="logo" style="padding-bottom:10px">
+              <img src="img/logo.png" alt="logo" name="logo" style="padding-bottom:10px">
               <div class="col-md-12 text-center">
               </div>
               <div class="col-md-4 col-sm-12  col-md-offset-4 text-center">
@@ -46,7 +42,7 @@
                     <input type="checkbox" value="remember-me">
                     </input>Remember Me
                   </label>
-                  <a href="{% url 'tamagotchi:homepage' %}">
+                  <a href="homepage.html">
                   <button class="btn btn-lg btn-primary btn-block" type="submit">Sign In
                   </button>
                   </a>
@@ -59,5 +55,5 @@
             <a href="#" class="btn btn-primary">Register</a>
           </div>
             </div>
-
+       
       </body>
